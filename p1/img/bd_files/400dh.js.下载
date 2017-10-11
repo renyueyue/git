@@ -1,0 +1,9 @@
+wn=window.location.host; 
+if (wn.indexOf("souxiao")>0)
+{
+	document.write("400-808-1951");
+}
+else
+{
+	document.write("400-808-1951");
+}

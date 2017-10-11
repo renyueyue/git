@@ -1,0 +1,138 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(typeof doyoo=='undefined' || !doyoo){
+var d_genId=function(){
+var id ='',ids='0123456789abcdef';
+for(var i=0;i<34;i++){ id+=ids.charAt(Math.floor(Math.random()*16)); } return id;
+};
+
+var doyoo={
+env:{
+secure:false,
+mon:'http://m9109.looyu.com/monitor',
+chat:'http://looyuoms7721.looyu.com/chat',
+file:'http://yun-static.soperson.com/131221',
+compId:20001130,
+confId:10056345,
+workDomain:'',
+vId:d_genId(),
+lang:'',
+fixFlash:1,
+fixMobileScale:0,
+subComp:0,
+_mark:'06c6d2ae73c00f4ce14a714c5e916e442ecedd4074d2aba9cac9c548ef35a45ff2dd6dc6115883ca'
+},
+chat:{
+mobileColor:'',
+mobileHeight:80,
+mobileChatHintBottom:0,
+mobileChatHintMode:0,
+mobileChatHintColor:'',
+mobileChatHintSize:0
+}
+
+, monParam:{
+index:7,
+preferConfig:1,
+
+title:'\u5317\u4eac\u5927\u5b66\u7559\u5b66\u9884\u79d1\u73ed\u5b98\u65b9\u62a5\u540d\u54a8\u8be2\u4e2d\u5fc3',
+text:'<span style="font-size:small;">\u4f60\u597d\uff0c\u6b22\u8fce\u5c31\u8bfb\u5317\u4eac\u5927\u5b66\u591a\u56fd\u7559\u5b66\u9884\u79d1\u73ed\uff0c<span style="color: rgb(255, 0, 0);">\u5206\u522b\u6709\u672c\u79d1\u53ca\u7855\u58eb\u7559\u5b66\u9884\u79d1</span>\uff01<span style="color: rgb(255, 0, 0);">\u7559\u5b66\u8bf4\u660e\u4f1a\u706b\u70ed\u9884\u7ea6\u4e2d\uff01\uff01</span>\u6211\u662f\u4eca\u5929\u7684\u5728\u7ebf\u503c\u73ed\u8001\u5e08\uff0c\u70b9\u51fb\u201c\u5f00\u59cb\u4ea4\u8c08\u201d\u5373\u53ef\u4e0e\u6211\u5bf9\u8bdd\u3002&nbsp;</span>',
+auto:15,
+group:'10058989',
+start:'00:00',
+end:'24:00',
+mask:false,
+status:true,
+fx:0,
+mini:1,
+pos:0,
+offShow:0,
+loop:60,
+autoHide:0,
+hidePanel:0,
+miniStyle:'#0680b2',
+miniWidth:'340',
+miniHeight:'490',
+showPhone:0,
+monHideStatus:[0,0,0],
+monShowOnly:'',
+autoDirectChat:-1,
+allowMobileDirect:0,
+minBallon:1,
+chatFollow:1
+}
+
+
+, panelParam:{
+mobileIcon:'null',
+mobileIconWidth:0,
+mobileIconHeight:0,
+category:'win',
+preferConfig:1,
+position:0,
+vertical:150,
+horizon:5
+
+,mode:0,
+index:4
+
+,width:130
+
+
+
+,title:'\u62db\u751f\u54a8\u8be2\u90e8'
+
+
+, headClr:'#FFFFFF',
+headBgClr:'#E80404',
+borderClr:'#E80404',
+phone:''
+
+
+
+,customers:{"mode":"1","groups":[{"mode":2,"phone":0,"name":"\u9ad8\u4e8c\u51fa\u56fd\u54a8\u8be2","sms":0,"count":0,"online":1,"active":1,"id":10059005},{"mode":2,"phone":0,"name":"\u9ad8\u4e09\u51fa\u56fd\u54a8\u8be2","sms":0,"count":0,"online":1,"active":1,"id":10059006},{"mode":2,"phone":0,"name":"\u51fa\u56fd\u8bfb\u672c\u79d1","sms":0,"count":0,"online":1,"active":1,"id":10059007},{"mode":2,"phone":0,"name":"\u51fa\u56fd\u8bfb\u7855\u58eb","sms":0,"count":0,"online":1,"active":1,"id":10059008},{"mode":2,"phone":0,"name":"\u5176\u4ed6\u5b66\u5386\u7559\u5b66","sms":0,"count":0,"online":1,"active":1,"id":10059009}],"showRobot":0}
+
+
+
+}
+
+
+
+};
+
+if(typeof talk99Init == 'function'){
+talk99Init(doyoo);
+}
+if(!document.getElementById('doyoo_panel')){
+var supportJquery=typeof jQuery!='undefined';
+var doyooWrite=function(html){
+document.writeln(html);
+}
+
+doyooWrite('<div id="doyoo_panel"></div>');
+
+
+doyooWrite('<div id="doyoo_monitor"></div>');
+
+
+doyooWrite('<div id="talk99_message"></div>')
+
+doyooWrite('<div id="doyoo_share" style="display:none;"></div>');
+doyooWrite('<lin'+'k rel="stylesheet" type="text/css" href="http://yun-static.soperson.com/131221/oms.css?170918"></li'+'nk>');
+doyooWrite('<scr'+'ipt type="text/javascript" src="http://yun-static.soperson.com/131221/oms.js?170918" charset="utf-8"></scr'+'ipt>');
+}
+}

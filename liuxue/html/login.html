@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录页面</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--跨浏览器的兼容性-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/commoncss/bootstrap.css">
+  <link rel="stylesheet" href="../css/css/login.css">
+
+</head>
+<body><!----><!----><!----><!----><!---->
+<!--导航-->
+<div class="container">
+  <div class="wrapper">
+
+    <div id="panel">
+      <h1>登录</h1>
+      <form action="" id="form" class="form">
+        <div class="form-group ">
+          <!--<label for="uname">手机号：</label>-->
+          <input class="form-control" type="text" id="uname" name="uname" maxlength="11" placeholder="手机号">
+          <span class="msg-default hidden"></span>
+        </div>
+        <div class="form-group ">
+          <!--<label for="upwd">密码：</label>-->
+          <input class="form-control" type="password" id="upwd" name="upwd" minlength="6" maxlength="8"
+                 placeholder="密码">
+          <span class="msg-default hidden"></span>
+        </div>
+        <div class="form-group ">
+          <!--<label for="inputTxt">验证码：</label>-->
+          <input class="form-control" type="text" id="inputTxt" maxlength="4" placeholder="验证码">
+          <span class="getAgain" id="code"></span>
+          <!--<span class="getAgain" id="getAgain">看不清换一张</span>-->
+          <span class="ts"></span>
+        </div>
+        <div class="form-group">
+          <button type="button" value="login" class="btn btn-info" id="btn1">登录</button>
+          <button type="button" value="cancel" class="btn btn-info" id="btn2">注册</button>
+        </div>
+      </form>
+    </div>
+    <!--动画方块上的文字-->
+    <ul class="bg-bubbles">
+      <li>Study</li>
+      <li>Strive</li>
+      <li>Motivated</li>
+      <li>Brave</li>
+      <li>Brave</li>
+      <li>Optimistic</li>
+      <li>Thanksgiving</li>
+      <li>Positive</li>
+      <li>Fine</li>
+      <li>Generous</li>
+    </ul>
+  </div>
+</div>
+<!--密码账号错误 弹出模态框-->
+<div id="errorMsg">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="modal-error">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+        <span class="close-tishi">提示!</span>
+        <span class="close-error"></span>
+      </div>
+    </div>   <!--提示注册成功或失败的信息-->
+  </div>
+</div>
+<script src="../js/commonjs/jquery-1.11.3.js"></script>
+<script src="../js/js/login.js"></script>
+
+<script src="../js/commonjs/bootstrap.js"></script>
+<script src="../js/commonjs/respond.min.js"></script>
+
+
+
+</body>
+</html>

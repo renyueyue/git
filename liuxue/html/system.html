@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>学生管理系统</title>
+  <!--自己css-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--跨浏览器的兼容性-->
+
+  <link rel="stylesheet" href="../css/css/system.css">
+  <link rel="stylesheet" href="../css/commoncss/bootstrap.css">
+</head>
+<!---->
+<body onload="stu1()">
+<div>
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="navbar-container" id="navbar-container">
+
+      <!--标题文字-->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">学生信息管理系统</a>
+        <!--navbar-toggle中有媒体查询，小于768才显示出来,有几个横线就写几个icon-bar-->
+        <a class="navbar-toggle" data-toggle="collapse" href="#nav_list">
+          <span class="icon-bar"></span><!--光icon-bar没效果，必须搭配父元素的navbar-toggle-->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </div>
+
+      <!--导航根据屏幕大小隐藏显示 登录注册-->
+      <div class="navbar-collapse collapse" id="nav_list">
+        <!--导航条中的元素：都要加个navbar-* ，否则都不居中对齐-->
+        <!--导航条中的表单 navbar-form -->
+        <div id="btns">
+          <div id="btnregister">
+            <!--导航条中的注册按钮 navbar-btn -->
+            <a class="btn btn-success navbar-btn navbar-right" href="register.html">注册</a>
+          </div>
+          <div id="btnlogin">
+            <a class="btn btn-success navbar-btn navbar-right" href="login.html">登录</a>
+          </div>
+        </div>
+        <!--导航条中的导航  navbar-nav -->
+        <ul class="ul_top nav navbar-nav"><!--光一个nav会把li变为块级元素，，每个占据一整行，所以加navbar-nav-->
+          <li class="index"><a href="liuxue.html">网站首页</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--top logo学生信息管理系统-->
+  <!--中间主内容区:左侧导航区,右侧显示内容区-->
+  <div class="main-container" id="main-container">
+    <!--左侧ul li ul li导航区-->
+    <div class="left_list" id="left_list">
+      <!--导航菜单-->
+      <div class="l_top_nav">
+        <span>导航菜单</span>
+      </div>
+      <ul class="nav_list nav " id="leftList">
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-user"></span>
+            用户管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: block">
+            <li class="active">
+              <a href="javascript:stu1()">
+                <i class="icon-double-angle-right"></i>
+                用户管理</a></li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              角色管理</a></li>
+            <li><a href="javascript:stu3()">
+              <i class="icon-double-angle-right"></i>
+              菜单管理</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-comment "></span>
+            教师管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              教师查询</a>
+            </li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              教师资料</a></li>
+            <li><a href="javascript:stu3()">
+              <i class="icon-double-angle-right"></i>
+              教师特长</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            学生管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              学生信息</a></li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              学生资料</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-film "></span>
+            成绩管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              个人成绩</a></li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              班级成绩</a></li>
+            <li><a href="javascript:stu3()">
+              <i class="icon-double-angle-right"></i>
+              年级成绩</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-comment "></span>
+            教师管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              教师查询</a>
+            </li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              教师资料</a></li>
+            <li><a href="javascript:stu3()">
+              <i class="icon-double-angle-right"></i>
+              教师特长</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            学生管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              学生信息</a></li>
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              学生资料</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-film "></span>
+            成绩管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              个人成绩</a></li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              班级成绩</a></li>
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              年级成绩</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-comment "></span>
+            教师管理
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="menu list-unstyled" style="display: none">
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              教师查询</a>
+            </li>
+            <li><a href="javascript:stu1()">
+              <i class="icon-double-angle-right"></i>
+              教师资料</a></li>
+            <li><a href="javascript:stu2()">
+              <i class="icon-double-angle-right"></i>
+              教师特长</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--右侧动态内容生成区-->
+    <div class="page-content"></div>
+  </div>
+
+  <!--最底侧-->
+  <div class="footer navbar-fixed-bottom"></div>
+
+</div>
+<!--js文件-->
+<script src="../js/commonjs/jquery-1.11.3.js"></script>
+<script src="../js/commonjs/bootstrap.js"></script>
+<script src="../js/js/system.js"></script>
+
+</body>
+</html>

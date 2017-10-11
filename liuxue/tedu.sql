@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0-beta1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: 2017-10-08 05:44:15
+-- 服务器版本： 10.1.19-MariaDB
+-- PHP Version: 5.6.28
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `tedu`
+--
+CREATE DATABASE IF NOT EXISTS `tedu` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `tedu`;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE `student` (
+  `sid` int(11) NOT NULL,
+  `sname` char(20) DEFAULT NULL,
+  `spwd` char(20) DEFAULT NULL,
+  `sbir` char(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `student`
+--
+
+INSERT INTO `student` (`sid`, `sname`, `spwd`, `sbir`) VALUES
+(1, '18612306840', '12345678', '1504000200000'),
+(2, '13856790785', '78666666', '1505195200000'),
+(3, '13832697305', '78901234', '1304195200000'),
+(4, '13467690785', '98789000', '1502195200000'),
+(37, '18612777777', '77777777', '1505318400000'),
+(38, '18616666640', '66666666', '1505232000000'),
+(39, '13566666666', '66666666', '1504627200000'),
+(40, '14344444444', '44444444', '1505232000000'),
+(41, '18612226840', '22222222', '1504627200000'),
+(42, '1111111111', '33333333', '1505318400000'),
+(43, '8888', '8888888', '1504713600000'),
+(44, '18744444444', '33333333', '1507219200000');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `student`
+--
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- 在导出的表使用AUTO_INCREMENT
+--
+
+--
+-- 使用表AUTO_INCREMENT `student`
+--
+ALTER TABLE `student`
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,38 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS tedu;
+CREATE DATABASE tedu CHARSET=UTF8;
+USE tedu;
+CREATE TABLE student(
+	sid int primary key auto_increment,
+	sname char(20),
+	spwd char(20),
+	sbir char(30)
+);
+INSERT INTO student VALUES(NULL,'18612306840','12345678','1504000200000');
+INSERT INTO student VALUES(NULL,'13856790785','78666666','1505195200000');
+INSERT INTO student VALUES(NULL,'13832697305','78901234','1304195200000');
+INSERT INTO student VALUES(NULL,'13467690785','98789000','1502195200000');
+SELECT * FROM student;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

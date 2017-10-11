@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">   <!--ng-app="myApp"-->
+<head>
+  <meta charset="UTF-8">
+  <title>注册页面</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--跨浏览器的兼容性-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/commoncss/bootstrap.css">
+  <link rel="stylesheet" href="../laydate/need/laydate.css">
+  <link rel="stylesheet" href="../css/css/register.css">
+
+</head>
+<body><!----><!---->
+<!--导航-->
+<div class="container">
+
+  <div class="wrapper">
+    <div id="panel">
+      <h1>注册</h1>
+      <form action="" id="form" class="form">
+        <div class="form-group ">
+          <!--<label for="uname">手机号：</label>-->
+          <input class="form-control" type="text" id="uname" name="uname" maxlength="11" placeholder="手机号">
+          <span class="msg-default ">
+            <span class="glyphicon glyphicon-icon-remove-circle"></span>
+            </span>
+        </div>
+
+        <div class="form-group formyan">
+          <!--<label for="unamey" class="hmiao">验证码：</label>-->
+          <input class="form-control second" type="text" id="unamey" name="unamey" maxlength="4"
+                 placeholder="验证码"
+                 required >
+          <span class="getSecond"><a>点击获取</a></span>
+          <span class="msg-default hidden"></span>
+        </div>
+
+
+        <div class="form-group">
+          <!--<label for="upwd">设置密码：</label>-->
+          <input class="form-control" type="password" id="upwd" name="upwd" minlength="6" maxlength="8"
+                 placeholder="设置密码" required ng-model="pwd">
+          <span class="msg-default hidden"></span>
+        </div>
+
+        <div class="form-group">
+          <!--<label for="ubirthday">出生日期：</label>-->
+          <input class="form-control laydate-icon laydate-body" id="ubirthday" name="ubirthday" required
+                 ng-model="birthday"
+                 placeholder="出生日期">
+          <span class="msg-default hidden"></span>
+        </div>
+        <div class="form-group agreeleft">
+          <!--<label for="uagree">是否同意：</label>-->
+          <input class="accept" type="button" value="接受">
+          <input type="checkbox" id="uagree" name="uagree" disabled>
+          <a class="read" href="#">《阅读规则》</a>
+        </div>
+        <div class="form-group ">
+          <button disabled id="register" type="button" value="register" class="btn btn-info">注册</button>
+          <button id="login" type="button" value="cancel" class="btn btn-info">登录</button>
+        </div>
+      </form>
+    </div>
+
+    <ul class="bg-bubbles">
+      <li>Study</li>
+      <li>Strive</li>
+      <li>Motivated</li>
+      <li>Brave</li>
+      <li>Brave</li>
+      <li>Optimistic</li>
+      <li>Thanksgiving</li>
+      <li>Positive</li>
+      <li>Fine</li>
+      <li>Generous</li>
+    </ul>
+  </div>
+</div>
+<!--密码账号错误 弹出模态框-->
+<div id="errorMsg">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="modal-error">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+        </div>
+        <span class="close-tishi">提示!</span>
+        <span class="close-error">请您再次检查账号、密码格式是否正确!</span>
+      </div>
+    </div>   <!--提示注册成功或失败的信息-->
+
+  </div>
+</div>
+
+  <script src="../js/commonjs/jquery-1.11.3.js"></script>
+  <script src="../laydate/laydate.js"></script>
+  <script src="../js/js/register.js"></script>
+  <script src="../js/commonjs/respond.min.js"></script>
+  <!--<script src="../js/commonjs/angular.min.js"></script>-->
+
+</body>
+</html>

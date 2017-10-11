@@ -1,0 +1,1 @@
+document.writeln(" <a onclick=\"doyoo.util.openChat(\'g=10058989\');return false;\" target=\"_blank\" style=\"color: #8b8c8b;\">联系我们</a></font>");
